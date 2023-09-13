@@ -1,8 +1,8 @@
-import EventDispatcher from "../../../@shared/event/event-dispatcher";
-import Customer from "../../entity/customer";
-import CustomerCreatedEvent from "../customer-created.event";
-import ShowFirstMessageWhenCustomerIsCreated from "./show-first-message-when-customer-is-created.handler";
-import ShowSecondMessageWhenCustomerIsCreated from "./show-second-message-when-customer-is-created.handler";
+import EventDispatcher from "../../@shared/event/event-dispatcher";
+import Customer from "../entity/customer";
+import CustomerCreatedEvent from "./customer-created.event";
+import ShowFirstMessageWhenCustomerIsCreated from "./handler/show-first-message-when-customer-is-created.handler";
+import ShowSecondMessageWhenCustomerIsCreated from "./handler/show-second-message-when-customer-is-created.handler";
 import { v4 as uuid } from "uuid";
 
 describe("Customer created events tests", () => {

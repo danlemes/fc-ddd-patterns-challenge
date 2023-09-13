@@ -1,8 +1,8 @@
-import EventDispatcher from "../../../@shared/event/event-dispatcher";
-import Customer from "../../entity/customer";
-import Address from "../../value-object/address";
-import CustomerAddressChangedEvent from "../customer-address-changed.event";
-import ShowMessageWhenCustomerAddressIsCreated from "./show-message-when-customer-address-is-changed.handler";
+import EventDispatcher from "../../@shared/event/event-dispatcher";
+import Customer from "../entity/customer";
+import Address from "../value-object/address";
+import CustomerAddressChangedEvent from "./customer-address-changed.event";
+import ShowMessageWhenCustomerAddressIsCreated from "./handler/show-message-when-customer-address-is-changed.handler";
 import { v4 as uuid } from "uuid";
 
 describe("Customer changed events tests", () => {
